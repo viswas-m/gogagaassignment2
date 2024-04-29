@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gogaga</title>
+    <link rel="stylesheet" href="index.css" >
+    <script src="https://kit.fontawesome.com/92e176dd00.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <hi class="logo">go<span id="green">g</span>a<span id="green">g</span>a</hi>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-earth-americas" style="color: #019aa0;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">Help</li>
+                    <li class="nav-item"><img class="flag" src="data:image/png;base64,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" height="40" width="50" /></li>
+                    <li class="nav-item">List my cabs <br /><span>check your cabs</span></li>
+                    <li>
+                        <div class="special-nav-item">
+                            <i class="fa-regular fa-gem" style="color: #ffffff;"></i>
+                            <p style="color: white">Membership</p>
+                            <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item special">
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+                            <p>My Bookings <br /><span>Manage your reservations</span> </p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item special">
+                            <i class="fa-solid fa-user"></i>
+                            <p>Login or <br />create account</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="content">Search something memorable</h1>
+    <h2>Making your travel a memeorable experience with us </h2>
+    <div class="booking-section">
+        <div class="option-container">
+            <div class="option-card">
+                <i class="fa-solid fa-plane" style="color: #263661;"></i>
+                <p class="option-title"> Flights</p>
+            </div>
+            <div class="option-card" style="background-color: #263661;">
+                <i class="fa-solid fa-hotel" style="color: #ffffff;"></i>
+                <p class="option-title" style="color:#ffffff;">Hotels</p>
+            </div>
+            <div class="option-card">
+                <i class="fa-solid fa-suitcase" style="color: #263661;"></i>
+                <p class="option-title">packages</p>
+            </div>
+            <div class="option-card">
+                <i class="fa-solid fa-globe" style="color: #263661;"></i>
+                <p class="option-title">Tours</p>
+            </div>
+            <div class="option-card">
+                <i class="fa-solid fa-money-bill-transfer" style="color: #263661;"></i>
+                <p class="option-title">Transfers</p>
+            </div>
+            <div class="option-card">
+                <i class="fa-solid fa-gift" style="color: #263661;"></i>
+                <p class="option-title">Gift card</p>
+            </div>
+        </div>
+        <div class="option-content">
+            <div class="details-container">
+                <div class="details">
+                    <div>
+                        <p>Destination</p>
+                        <h3>City,airport,region,landmark or pro...</h3>
+                    </div>
+                </div>
+                <div class="details">
+                    <div>
+                        <p>Check-in</p>
+                        <h3>Tue, mar 12</h3>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-moon" style="color: #ffffff;"></i>
+                        <p>1 Night</p>
+
+                    </div>
+                    <div>
+                        <p>Check-out</p>
+                        <h3>Wed, mar 13</h3>
+                    </div>
+                </div>
+                <div class="details">
+                    <div>
+                        <p>Guests and Rooms</p>
+                        <h3>2 adults, 0 Children , 1 room</h3>
+                    </div>
+                    <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                </div>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #263661;"></i>
+                </div>
+            </div>
+            <div class="rating">
+                <p> Star Rating <span class="rating-box">2<i class="fa-regular fa-star" style="color: #263661;"></i></span>
+                    <span class="rating-box">3 <i class="fa-regular fa-star" style="color:  #263661;"></i></span>
+                    <span class="rating-box">4 <i class="fa-regular fa-star" style="color:  #263661;"></i></span>
+                    <span class="rating-box">5 <i class="fa-regular fa-star" style="color:  #263661;"></i></span>
+                </p>
+            </div>
+            <div class="additional-option">
+
+                <p><i class="fa-regular fa-square" style="color: #ffffff;"></i>I'm looking for hand picked hotels <i class="fa-solid fa-circle-exclamation" style="color: #4380ea;"></i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-section">
+        <div class="item">
+            <h1>80K</h1>
+            <p>Happy<br />Customers</p>
+        </div>
+        <div class="vl"></div>
+        <div class="item">
+            <h1>600K</h1>
+            <p>Hotels<br />Worldwide</p>
+        </div>
+        <div class="vl"></div>
+        <div class="item">
+            <h1>450+</h1>
+            <p>Global<br />Airlines</p>
+        </div>
+        <div class="vl"></div>
+        <div class="last-item">
+            <p>Download now:</p>
+            <div>
+                <i class="fa-solid fa-play" style="color: #263661;"></i>
+                <h2>Google Play</h2>
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <div class="features">
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg_z9nmRFwqJXCmEMbx9mUPkwKOpSpcP8gjJ-xDaNpA4PpEgCh" />
+            <div>
+                <h1>Safe & Secured Travel</h1>
+                <p>Secured Hotel Rooms</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKcWCw9VBPsLJ3axoossbGUS06nip0b0uWkt2Kv1M6SPLjwU2B" />
+            <div>
+                <h1>24/7 Travel Assistance</h1>
+                <p>Customer Support</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://www.iconbunny.com/media/catalog/product/2/3/2373.3-notebook-pen-icon-iconbunny.jpg?width=50&store=icons&image-type=small_image" />
+            <div>
+                <h1>Customized holidays</h1>
+                <p>Tailor made Trips</p>
+            </div>
+        </div>
+        <div>
+            <i class="fa-solid fa-leaf" style="color: #263661;"></i>
+            <div>
+
+                <h1>SAVE</h1>
+                <p>TREE PAPER</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
